@@ -68,7 +68,3 @@ export type UserRole = "owner" | "admin" | "member";
 export function isAdmin(role: UserRole | null): boolean {
   return role === "owner" || role === "admin";
 }
-
-export function isBursar(role: UserRole | null): boolean {
-  return role === "member";
-}

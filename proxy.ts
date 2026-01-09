@@ -12,9 +12,6 @@ const adminRoutes = [
   "/admin",
 ];
 
-const bursarRoutes = [
-  "/bursar",
-];
 
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
