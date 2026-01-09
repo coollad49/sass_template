@@ -9,6 +9,7 @@ export default defineConfig({
     path: "prisma/migrations",
   },
   datasource: {
-    url: process.env["DATABASE_URL"],
+    // Use direct URL for migrations (Accelerate doesn't support DDL operations)
+    url: process.env["DATABASE_URL_DIRECT"],
   },
 });
